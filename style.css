@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --text-base-color: #312d64;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body, button {
+font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+  border-radius: .5rem;
+  background: #FFFFFF;
+
+  box-shadow: 0 2rem 5rem 0 rgba(0, 0, 0, 0.80);
+
+  width: 428px;
+  padding: 48px 64px 64px 64px;
+  text-align: center;
+}
+
+/* screen*/
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-base-color);
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+p {
+  color: var(--text-base-color);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+
+  margin-top: 1.4rem;
+}
+
+a img {
+  margin-top: 2.6rem;
+}
+
+a img:hover {
+  animation: shaking 0.1s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shaking {
+  0% {margin-left: 6px;}  
+  25% {margin-left: 6px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -6px;}
+  100% {margin-left: -6px;}
+}
+
+/* screen2*/
+
+/*.message {
+  margin-top: 1.7rem;
+  animation: moving 2s ease;
+}*/
+
+.screen2 h2 {
+  font-size: 2.4rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: normal;
+  background-color: #e4edf1;
+  box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+  animation-name: moving;
+  animation-duration: 2s;
+  text-align: center;  
+  padding: 10px; 
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+}
+
+@keyframes moving {
+    0% {
+      transform:
+      translateY(150px)
+      scale(0.1);
+
+    }
+
+    100% {
+      transform:
+      translateY(0px)
+      scale(1);
+    }
+  }
+
+.cookie {
+  margin-top: 1.7rem;
+}
+
+.screen2 button {
+  background: #FF9500;
+  color: #FFFFFF;
+
+  border: none;
+  border-radius: .4rem;
+  padding: 1.6rem;
+  cursor: pointer;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.screen2 button:hover {
+  background: #d27b00;
+}
+
+
